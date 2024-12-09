@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+:root{
+    --main-color: #F26100;
+    --body-bg: #171515;
+    --box-bg: #221f1f;
+    --text-color: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    color: var(--text-color);
+    background-color: var(--body-bg);
+    color:var(--text-color);
+    border-bottom: 4px solid var(--main-color);
+}
+
+nav h2{
+    font-size: 160%;
+    margin-left: 10%;
+}
+
+nav a {
+    color: var(--text-color);
+    margin-left: 10%;
+}
+
+nav a:hover{
+    color: var(--main-color);
+}
+
+.nav-home{
+    margin-inline: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-home h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.nav-home #volte {
+    color: var(--body-bg);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    margin-bottom: 1%;
+    padding-right: 70%;
+}
+
+.nav-home #volte:hover{
+    transform: translateX(8px);
+}
+
+.nav-home #volte::before {
+    content: "";
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    height: 3px; 
+    width: 0%;
+    background-color: var(--main-color); 
+    transition: all 0.3s ease; 
+}
+
+.nav-home #volte:hover::before {
+    width: 10%;
+}
+
+.mesmalinha {
+    display: flex;
+    margin-top: 3%;
+}
+
+.mesmalinha p {
+    font-size: 14px;
+}
+
+.nav-home ul a{
+   font-weight: 800;
+   color: var(--text-color);
+}
+
+.nav-home ul li a{
+    padding: 13px;
+}
+
+.nav-home li{
+    display: inline-block;
+    margin-right: 0.4%;
+    cursor: pointer;
+    list-style: none;
+    border-radius: 100%;
+    background-color: black;
+    font-size: 16px;
+}
+
+.nav-home li:hover{
+    transform: scale(1.15);
+    background-color: var(--main-color);
+    transition: transform 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.nav-home .linha{
+    margin-block: 2%;
+    height: 2px;
+    background-color: var(--body-bg);
+    width: 100%;
+}
+
+/* Responsividade da parte de cima */
+@media only screen and (max-width: 700px){
+    .nav-home h1{
+        font-size: 1.7rem;
+        font-weight: 800;
+    }
+
+    .mesmalinha{
+        display: inline-block;
+        margin-bottom: 2%;
+    } 
+
+    nav h2{
+        font-size: 120%;
+    }
+}
+
+@media only screen and (max-width: 440px){
+    nav h2{
+        font-size: 90%;
+    }
+
+    nav a{
+        font-size: 70%;
+    }
+}
+
+section{
+    margin-inline: 10%;
+}
+
+h3{
+    font-size: 28px;
+    margin-bottom: 2%;
+}
+
+article{
+    margin-bottom: 2%;
+}
+
+h4{
+    font-size: 20px;
+    color: var(--body-bg);
+}
+
+p{
+    font-size: 16px;
+    color: var(--box-bg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    height: 30vh;
+    width: 100%;
+    background-color: var(--body-bg);
+    border-top: 4px solid var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+footer h2{
+    margin-bottom: 1.5%;
+}
+
+footer a{
+    color: var(--text-color);
+    padding: 3px;
+}
+
+footer a:hover{
+    color: var(--main-color);
+}
