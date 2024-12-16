@@ -20,7 +20,7 @@ body {
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -617,7 +617,11 @@ footer .content {
 /* Responsividade*/
 
 @media only screen and (max-width: 1280px) {
-    html {
+   html {
+        font-size: 15px;
+    }
+
+    .nav a, .nav span{
         font-size: 14px;
     }
 
@@ -640,7 +644,7 @@ footer .content {
 }
 
 @media only screen and (max-width: 850px) {
-    html {
+   html {
         font-size: 12px;
     }
 
