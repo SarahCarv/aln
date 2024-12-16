@@ -676,7 +676,7 @@ footer .content {
     }
 
     .item-content-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 800;
     }
 
@@ -714,6 +714,11 @@ footer .content {
     *{
         font-size: 10.5px;
     }
+
+    .hero-slide-item {
+        height: 50vh;
+        padding-top: unset;
+    }
      
     .hero-slide-item-video {
         height: 45vh;
@@ -724,7 +729,7 @@ footer .content {
     }
 
     .item-content-wraper p{
-        font-size: 11px;
+        font-size: 9.5px;
     }
 
     .item-content-wraper-video{
@@ -736,7 +741,7 @@ footer .content {
 
     .item-content-title{
         font-size: 1.8rem;
-        line-height: 2rem;
+        line-height: 1.5rem;
         
     }
 
